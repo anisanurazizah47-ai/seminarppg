@@ -12,14 +12,14 @@ const reflectionData = {
     code: 'PPG-101',
     semester: 'Semester 1',
     category: 'Mata Kuliah Inti',
-    title: 'PMA (Prinsip Pengajaran dan Asesmen I)',
+    title: 'PMAD (Pembelajaran Mendalam dan Asesmen Dasar)',
     subtitle: 'Pendekatan Teaching at The Right Level (TaRL) & Understanding by Design (UbD)',
     sks: '3 SKS',
     icon: 'book-open',
     color: 'blue',
     pdfUrl: 'https://drive.google.com/file/d/1R7AnypeddHcDwjavbtY9u2HFgwsPrroy/view?usp=sharing',
     gibbs: {
-      description: 'Mata kuliah Prinsip Pengajaran dan Asesmen I mendalami perancangan kurikulum berbasis backward design (Understanding by Design) dan asesmen diagnostik yang responsif terhadap kesiapan belajar siswa melalui pendekatan Teaching at The Right Level (TaRL). Sebagai calon guru Informatika, saya merancang modul ajar logika pemrograman dan algoritma dengan pemetaan awal kesiapan kognitif peserta didik.',
+      description: 'Mata kuliah Pembelajaran Mendalam dan Asesmen Dasar mendalami perancangan kurikulum berbasis backward design (Understanding by Design) dan asesmen diagnostik yang responsif terhadap kesiapan belajar siswa melalui pendekatan Teaching at The Right Level (TaRL). Sebagai calon guru Informatika, saya merancang modul ajar logika pemrograman dan algoritma dengan pemetaan awal kesiapan kognitif peserta didik.',
       
       evaluation: 'Penerapan modul ajar berbasis UbD pada siklus pembelajaran awal sangat berhasil membantu siswa memahami "Big Ideas" algoritma, bukan sekadar menghafal sintaks kode. Namun, tantangan muncul dalam menyusun rubrik asesmen autentik yang mencakup ragam diferensiasi konten dan produk bagi siswa yang belum memiliki perangkat laptop mandiri.',
       analysis: 'Keberhasilan asesmen sangat bergantung pada ketepatan asesmen diagnostik non-kognitif dan kognitif awal. Ketika guru mengenali baseline kompetensi siswa, desain pembelajaran tidak lagi one-size-fits-all, melainkan bertransformasi menjadi pengalaman belajar yang personal, bermakna, dan inklusif.',
