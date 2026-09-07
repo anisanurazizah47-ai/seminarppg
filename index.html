@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Digital Refleksi Pembelajaran - Seminar PPG UKSW | Anisa Nur Azizah, S.Kom</title>
+  <meta name="description" content="Portofolio Digital Refleksi Pembelajaran E-Porto Seminar PPG Universitas Kristen Satya Wacana (UKSW) - Mahasiswa: Anisa Nur Azizah, S.Kom | Dosen Pengampu: Hanita Yulia, M.Pd">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            uksw: {
+              navy: '#0e204d',
+              blue: '#1a56db',
+              gold: '#f59e0b',
+              green: '#0d9488'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#0b1120] text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white transition-colors duration-300">
+
+  <!-- Top Ribbon Gradient -->
+  <div class="ribbon-gradient w-full fixed top-0 left-0 z-50"></div>
+
+  <!-- ===================================================================
+       1. HEADER / NAVIGATION BAR (TOP)
+       =================================================================== -->
+  <header class="glass-header sticky top-1 z-40 w-full transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo: Logo UKSW & Logo PPG / E-Porto Seminar PPG -->
+        <a href="#" data-nav-target="dashboard" class="flex items-center gap-3.5 group cursor-pointer">
+          <!-- UKSW Crest Shield Emblem -->
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#0e204d] to-[#1a56db] p-0.5 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-blue-500/20 group-hover:scale-105 transition-all">
+            <div class="w-full h-full rounded-[14px] bg-[#0e204d] flex items-center justify-center relative overflow-hidden border border-amber-400/40">
+              <!-- Stylized UKSW Monogram -->
+              <span class="font-extrabold text-white text-xs tracking-tighter text-center leading-none">
+                <span class="text-amber-400 font-black text-sm">UKSW</span><br>
+                <span class="text-[8px] text-slate-300 tracking-widest font-semibold">1956</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="h-8 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block"></div>
+
+          <!-- PPG Badge & Title -->
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-blue-100 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800">
+                PPG Prajabatan
+              </span>
+              <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                UKSW Salatiga
+              </span>
+            </div>
+            <h1 class="text-base sm:text-lg font-extrabold tracking-tight text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              E-Porto Seminar PPG
+            </h1>
+          </div>
+        </a>
+
+        <!-- Header Navigation Menu (Desktop) -->
+        <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm">
+          
+          <!-- Nav Item: Dashboard (Utama) -->
+          <button data-nav-target="dashboard" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all font-semibold flex items-center gap-1.5">
+            <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+            Dashboard
+          </button>
+
+          <!-- Nav Item: Menu 1 - Refleksi Semester 1 (Dropdown) -->
+          <div class="relative group">
+            <button class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all flex items-center gap-1.5">
+              <i data-lucide="calendar" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i>
+              Refleksi Semester 1
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform group-hover:rotate-180"></i>
+            </button>
+            
+            <!-- Dropdown Menu 1 -->
+            <div class="absolute left-0 mt-1 w-72 p-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 nav-dropdown">
+              <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 dark:border-slate-800 mb-1">
+                6 Mata Kuliah Semester 1
+              </div>
+              <button data-nav-target="pma-1" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>PMA</strong> • Prinsip Pengajaran & Asesmen I</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="filosofi" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>Filosofi</strong> Pendidikan Indonesia</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="ct" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>CT</strong> • Computational Thinking</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="growth-mindset" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>Growth Mindset</strong> & Peserta Didik</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="ppl-1" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>PPL</strong> • Praktik Pengalaman Lapangan I</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="ppdp" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-between group/item">
+                <span><strong>PPDP</strong> • Pemahaman Peserta Didik</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Nav Item: Menu 2 - Refleksi Semester 2 (Dropdown) -->
+          <div class="relative group">
+            <button class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all flex items-center gap-1.5">
+              <i data-lucide="calendar-check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+              Refleksi Semester 2
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform group-hover:rotate-180"></i>
+            </button>
+            
+            <!-- Dropdown Menu 2 -->
+            <div class="absolute left-0 mt-1 w-72 p-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 nav-dropdown">
+              <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 dark:border-slate-800 mb-1">
+                6 Mata Kuliah Semester 2
+              </div>
+              <button data-nav-target="pse" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center justify-between group/item">
+                <span><strong>PSE</strong> • Pembelajaran Sosial & Emosional</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="pma-2" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center justify-between group/item">
+                <span><strong>PMA Lanjut</strong> • Pengajaran & Asesmen II</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="project-kepemimpinan" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center justify-between group/item">
+                <span><strong>Project Kepemimpinan</strong></span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="daring-bauran" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center justify-between group/item">
+                <span><strong>Pembelajaran Daring & Bauran</strong></span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="seminar-ppg" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-amber-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 font-semibold flex items-center justify-between group/item">
+                <span class="flex items-center gap-1">
+                  <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500"></i>
+                  <strong>Seminar PPG</strong> (Mata Kuliah Utama)
+                </span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+              <button data-nav-target="ppl-2" class="w-full text-left px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center justify-between group/item">
+                <span><strong>PPL</strong> • Praktik Pengalaman Lapangan II</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover/item:opacity-100"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Right Utilities & Action Buttons -->
+        <div class="flex items-center space-x-2.5">
+          <!-- Print / Present Mode -->
+          <button id="btn-present" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 transition-all shadow-sm">
+            <i data-lucide="presentation" class="w-4 h-4 text-blue-600"></i>
+            <span>Mode Seminar</span>
+          </button>
+
+          <!-- Dark/Light Mode Switcher -->
+          <button id="theme-toggle" aria-label="Ganti Tema" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-amber-500 dark:hover:text-amber-400 flex items-center justify-center transition-all shadow-sm">
+            <i data-lucide="moon" class="w-4 h-4 theme-icon-moon"></i>
+            <i data-lucide="sun" class="w-4 h-4 theme-icon-sun hidden"></i>
+          </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobile-menu-btn" aria-label="Buka Menu" class="lg:hidden w-10 h-10 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center transition-all">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MOBILE SIDEBAR / DRAWER
+       =================================================================== -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 hidden transition-all" role="dialog" aria-modal="true">
+    <!-- Backdrop overlay -->
+    <div id="drawer-backdrop" class="drawer-backdrop fixed inset-0"></div>
+
+    <!-- Drawer Content -->
+    <div id="drawer-content" class="fixed top-0 left-0 bottom-0 w-80 max-w-[85vw] bg-white dark:bg-slate-900 shadow-2xl border-r border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between overflow-y-auto transform -translate-x-full transition-transform duration-300 ease-out">
+      <div>
+        <!-- Top Drawer Header -->
+        <div class="flex items-center justify-between pb-5 border-b border-slate-100 dark:border-slate-800 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white font-black text-sm flex items-center justify-center">
+              UKSW
+            </div>
+            <div>
+              <h3 class="font-extrabold text-sm text-slate-900 dark:text-white">Seminar PPG</h3>
+              <p class="text-[11px] text-slate-500">Portofolio Refleksi</p>
+            </div>
+          </div>
+          <button id="close-drawer-btn" class="w-8 h-8 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white flex items-center justify-center">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Accordion -->
+        <div class="space-y-4 text-sm font-medium">
+          <button data-nav-target="dashboard" class="w-full text-left px-3 py-2.5 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-semibold flex items-center gap-2">
+            <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+            Dashboard Utama
+          </button>
+
+          <!-- Semester 1 Section -->
+          <div>
+            <div class="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
+              Refleksi Semester 1
+            </div>
+            <div class="mt-1 space-y-1 pl-2">
+              <button data-nav-target="pma-1" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> PMA (Pengajaran & Asesmen I)
+              </button>
+              <button data-nav-target="filosofi" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Filosofi Pendidikan
+              </button>
+              <button data-nav-target="ct" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span> Computational Thinking
+              </button>
+              <button data-nav-target="growth-mindset" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Growth Mindset
+              </button>
+              <button data-nav-target="ppl-1" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> PPL I
+              </button>
+              <button data-nav-target="ppdp" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span> PPDP
+              </button>
+            </div>
+          </div>
+
+          <!-- Semester 2 Section -->
+          <div>
+            <div class="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
+              Refleksi Semester 2
+            </div>
+            <div class="mt-1 space-y-1 pl-2">
+              <button data-nav-target="pse" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> PSE (Sosial & Emosional)
+              </button>
+              <button data-nav-target="pma-2" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> PMA Lanjut
+              </button>
+              <button data-nav-target="project-kepemimpinan" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Project Kepemimpinan
+              </button>
+              <button data-nav-target="daring-bauran" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> Pembelajaran Daring & Bauran
+              </button>
+              <button data-nav-target="seminar-ppg" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 font-bold text-amber-600 dark:text-amber-400 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Seminar PPG (Utama)
+              </button>
+              <button data-nav-target="ppl-2" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> PPL II
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Drawer Controls -->
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3">
+        <button id="mobile-theme-toggle" class="w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-200">
+          <i data-lucide="sun-moon" class="w-4 h-4"></i>
+          Ganti Mode Terang / Gelap
+        </button>
+        <div class="text-[11px] text-center text-slate-400">
+          Universitas Kristen Satya Wacana
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       3. MAIN CONTENT AREA (CENTER)
+       =================================================================== -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 academic-hero-bg">
+    
+    <!-- Breadcrumb Bar -->
+    <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400 mb-6">
+      <a href="#" data-nav-target="dashboard" class="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+        <i data-lucide="home" class="w-3.5 h-3.5"></i>
+        Beranda
+      </a>
+      <i data-lucide="chevron-right" class="w-3 h-3 text-slate-400"></i>
+      <span class="text-blue-600 dark:text-blue-400 font-semibold" id="breadcrumb-current">Dashboard Utama</span>
+    </div>
+
+    <!-- VIEW 1: DASHBOARD UTAMA -->
+    <div id="dashboard-view" class="space-y-8">
+      
+      <!-- HEADER HALAMAN: Portofolio Digital Refleksi Pembelajaran -->
+      <div class="interactive-card rounded-3xl p-6 sm:p-10 relative overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50/50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 dark:bg-blue-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-sm">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+              Portofolio Final Terverifikasi
+            </span>
+            <span class="badge-uksw px-3 py-1 rounded-full text-xs font-bold tracking-wide">
+              FKIP UKSW Salatiga
+            </span>
+            <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">
+              Tahun Ajaran 2024/2025
+            </span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight mb-4">
+            Portofolio Digital Refleksi Pembelajaran
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
+            Dokumentasi komprehensif perjalanan metamorfosis profesional, desain pembelajaran bermakna, integrasi <em>Computational Thinking</em>, dan sintesis refleksi kritis program Pendidikan Profesi Guru (PPG) Prajabatan.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           WIDGETS CARDS (BARIS 1)
+           =================================================================== -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Stat Card 1: Nama Mahasiswa : Anisa Nur Azizah, S.Kom -->
+        <div class="interactive-card rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-blue-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/70 px-2.5 py-1 rounded-lg border border-blue-200/50 dark:border-blue-800/40">
+                Mahasiswa PPG
+              </span>
+              <div class="w-9 h-9 rounded-xl bg-blue-600/10 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div class="flex items-center gap-3.5 mb-3">
+              <!-- Avatar Mahasiswa -->
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-teal-400 p-0.5 shadow-md flex-shrink-0">
+                <img src="asset/anisa-nur-azizah.png" alt="Anisa Nur Azizah" class="w-full h-full rounded-[14px] object-cover" />
+              </div>
+              <div>
+                <h3 class="font-extrabold text-slate-900 dark:text-white text-base leading-tight">
+                  Anisa Nur Azizah, S.Kom
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  NIM: 2320240901
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 space-y-1">
+            <div class="flex justify-between">
+              <span>Bidang Studi:</span>
+              <strong class="text-slate-800 dark:text-slate-200">Informatika</strong>
+            </div>
+            <div class="flex justify-between">
+              <span>LPTK:</span>
+              <span class="text-slate-800 dark:text-slate-200 font-medium">UKSW Salatiga</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stat Card 2: Dosen Pengampu : Hanita Yulia, M.Pd -->
+        <div class="interactive-card rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-emerald-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/70 px-2.5 py-1 rounded-lg border border-emerald-200/50 dark:border-emerald-800/40">
+                Dosen Pembimbing
+              </span>
+              <div class="w-9 h-9 rounded-xl bg-emerald-600/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
+                <i data-lucide="user-check" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div class="flex items-center gap-3.5 mb-3">
+              <!-- Avatar Dosen -->
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-600 via-teal-500 to-sky-400 p-0.5 shadow-md flex-shrink-0">
+                <div class="w-full h-full rounded-[14px] bg-slate-900 flex items-center justify-center text-white font-black text-lg">
+                  HY
+                </div>
+              </div>
+              <div>
+                <h3 class="font-extrabold text-slate-900 dark:text-white text-base leading-tight">
+                  Hanita Yulia, M.Pd
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  Dosen Pembimbing Seminar PPG
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 space-y-1">
+            <div class="flex justify-between">
+              <span>Fakultas:</span>
+              <strong class="text-slate-800 dark:text-slate-200">FKIP UKSW</strong>
+            </div>
+            <div class="flex justify-between">
+              <span>Status:</span>
+              <span class="text-emerald-600 dark:text-emerald-400 font-semibold">Pembimbing Aktif</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stat Card 3: Total Refleksi Tuntas -->
+        <div class="interactive-card rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/70 px-2.5 py-1 rounded-lg border border-amber-200/50 dark:border-amber-800/40">
+                Ketuntasan Akademik
+              </span>
+              <div class="w-9 h-9 rounded-xl bg-amber-600/10 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold">
+                <i data-lucide="book-check" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div class="mb-2">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">12</span>
+              <span class="text-slate-500 dark:text-slate-400 text-sm font-medium"> / 12 Mata Kuliah</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Seluruh siklus refleksi model Gibbs dan artefak telah lengkap tervalidasi.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden">
+              <div class="bg-amber-500 h-2 rounded-full w-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stat Card 4: Praktik Lapangan (PPL) -->
+        <div class="interactive-card rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-indigo-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/70 px-2.5 py-1 rounded-lg border border-indigo-200/50 dark:border-indigo-800/40">
+                Praktik Lapangan
+              </span>
+              <div class="w-9 h-9 rounded-xl bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div class="mb-2">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">520+</span>
+              <span class="text-slate-500 dark:text-slate-400 text-sm font-medium"> Jam PPL</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Pelaksanaan PPL 1 & PPL 2 di sekolah mitra dengan format Lesson Study & PTK.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-indigo-600 dark:text-indigo-400 font-semibold flex items-center justify-between">
+            <span>Status Sekolah Mitra:</span>
+            <span>Terakreditasi A</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================================================================
+           MAIN DISPLAY (BARIS 2): SECTION 1 & SECTION 2
+           =================================================================== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Section 1: Paragraph Perkenalan -->
+        <div class="interactive-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-blue-500/5 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="flex items-center gap-2.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-blue-600/10 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                <i data-lucide="user" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Profil & Perkenalan Calon Pendidik</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Dedikasi keilmuan dan visi profesional keguruan</p>
+              </div>
+            </div>
+
+            <div class="prose dark:prose-invert max-w-none text-sm leading-relaxed text-slate-600 dark:text-slate-300 space-y-4">
+              <p>
+                Salam sejahtera dan salam kebajikan. Saya, <strong>Anisa Nur Azizah, S.Kom</strong>, adalah mahasiswa Program Pendidikan Profesi Guru (PPG) Prajabatan Bidang Studi Informatika di <strong>Universitas Kristen Satya Wacana (UKSW)</strong> Salatiga. Berangkat dari latar belakang akademis Ilmu Komputer, saya terpanggil untuk tidak hanya menjadi praktisi teknologi informasi, melainkan mengabdikan diri sebagai pendidik yang menumbuhkembangkan potensi generasi muda bangsa.
+              </p>
+              <p>
+                Bagi saya, pembelajaran Informatika bukan sekadar transfer instruksi sintaks atau pengoperasian peranti keras semata. Informatika adalah sarana strategis untuk mengasah ketajaman nalar kritis, kreativitas pemecahan masalah (<em>problem-solving</em>) melalui <em>Computational Thinking</em>, dan etika berkomunikasi digital. Dengan bimbingan intensif dari dosen pengampu kami, Ibu <strong>Hanita Yulia, M.Pd</strong>, saya terus berikhtiar menyelaraskan keahlian teknis dengan prinsip-prinsip pedagogik modern yang memerdekakan dan humanis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlight Core Values -->
+          <div class="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+              💡 Pedagogi Abad 21
+            </span>
+            <span class="px-3 py-1 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+              💻 Computational Thinking
+            </span>
+            <span class="px-3 py-1 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+              🌱 Growth Mindset
+            </span>
+            <span class="px-3 py-1 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+              🤝 Pembelajaran Sosial-Emosional
+            </span>
+          </div>
+        </div>
+
+        <!-- Section 2: Paragraph Refleksi -->
+        <div class="interactive-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-teal-500/5 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="flex items-center gap-2.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-teal-600/10 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Refleksi Kritis & Transformasi Diri</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Pemaknaan mendalam proses belajar sepanjang program PPG</p>
+              </div>
+            </div>
+
+            <div class="prose dark:prose-invert max-w-none text-sm leading-relaxed text-slate-600 dark:text-slate-300 space-y-4">
+              <p>
+                Menempuh pendidikan profesi di UKSW telah menghadirkan metamorfosis paradigma yang sangat mendasar. Jika sebelumnya saya memandang keberhasilan pengajaran dari seberapa tuntas materi tersampaikan sesuai buku ajar, kini saya menginternalisasi esensi ajaran <strong>Ki Hadjar Dewantara</strong> bahwa mendidik adalah <em>menuntun</em> segala kodrat peserta didik agar mencapai keselamatan dan kebahagiaan setinggi-tingginya.
+              </p>
+              <p>
+                Melalui penguasaan <em>Understanding by Design (UbD)</em>, diferensiasi pembelajaran, dan kerangka <em>CASEL</em> dalam Pembelajaran Sosial Emosional (PSE), saya belajar melihat ruang kelas bukan lagi sebagai kumpulan siswa yang seragam, melainkan sebuah taman keberagaman. Refleksi yang tersaji dalam e-portofolio seminar ini merupakan kristalisasi dari keringat praktik lapangan, evaluasi berkala, dan tekad tanpa henti untuk menjadi guru pembelajar sepanjang hayat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlight Commitment -->
+          <div class="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+            <span class="text-slate-500 dark:text-slate-400 font-medium">Model Refleksi:</span>
+            <span class="font-bold text-teal-600 dark:text-teal-400">Gibbs Reflective Cycle (6 Tahap Kritis)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================================================================
+           INTERACTIVE OVERVIEW: SEMESTER 1 & SEMESTER 2 MATRIKS MATA KULIAH
+           =================================================================== -->
+      <div class="space-y-6 pt-4">
+        
+        <!-- Semester 1 Grid Header -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+            <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">
+              Koleksi Refleksi Semester 1 (Mata Kuliah 1.1 - 1.6)
+            </h3>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Klik kartu untuk membuka refleksi lengkap</span>
+        </div>
+
+        <!-- Sem 1 Cards Grid -->
+        <div id="sem1-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Semester 2 Grid Header -->
+        <div class="flex items-center justify-between pt-6">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+            <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">
+              Koleksi Refleksi Semester 2 (Mata Kuliah 2.1 - 2.6)
+            </h3>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Termasuk Mata Kuliah Puncak Seminar PPG</span>
+        </div>
+
+        <!-- Sem 2 Cards Grid -->
+        <div id="sem2-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated by app.js -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- VIEW 2: DETAIL REFLEKSI MATA KULIAH (DYNAMIC) -->
+    <div id="reflection-detail-view" class="hidden space-y-8">
+      <!-- Populated dynamically by app.js upon selecting any course sub-menu -->
+    </div>
+
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-20 no-print transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white text-xs font-black flex items-center justify-center">
+              UKSW
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-900 dark:text-white">
+              Universitas Kristen Satya Wacana
+            </h4>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Program Studi Pendidikan Profesi Guru (PPG) Prajabatan<br>
+            Fakultas Keguruan dan Ilmu Pendidikan (FKIP)<br>
+            Jl. Diponegoro 52-60, Salatiga, Jawa Tengah, Indonesia 50711
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-400 mb-3">
+            Informasi Ujian Seminar
+          </h4>
+          <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2">
+            <li><strong>Mahasiswa:</strong> Anisa Nur Azizah, S.Kom</li>
+            <li><strong>Dosen Pengampu:</strong> Hanita Yulia, M.Pd</li>
+            <li><strong>Bidang Studi:</strong> Informatika / Ilmu Komputer</li>
+            <li><strong>Tahun Ajaran:</strong> 2024/2025</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-400 mb-3">
+            Integritas & Autentisitas
+          </h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-3">
+            Seluruh berkas modul ajar, artefak pembelajaran, dan narasi refleksi merupakan karya orisinil yang disusun untuk memenuhi persyaratan Seminar PPG Prajabatan.
+          </p>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            Terverifikasi Siap Uji
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div>
+          © 2025 E-Portofolio Seminar PPG • Anisa Nur Azizah, S.Kom • Bimbingan: Hanita Yulia, M.Pd
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" data-nav-target="dashboard" class="hover:text-blue-600">Dashboard</a>
+          <a href="#" data-nav-target="seminar-ppg" class="hover:text-blue-600">Seminar PPG</a>
+          <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="hover:text-blue-600 flex items-center gap-1">
+            Ke Atas <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Controller -->
+  <script src="app.js"></script>
+</body>
+</html>
